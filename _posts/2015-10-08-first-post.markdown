@@ -2,10 +2,12 @@
 layout: post
 title:  "First Post"
 date:   2015-10-07 13:10:04 -0500
-categories: jekyll update
+categories: first qa76
 ---
 
 I have found my home in [QA76](http://www.slc.bc.ca/mac/qa76.htm). 
+
+![My helpful screenshot]({{ "/assets/screenshot.jpg" | absolute_url }})
 
 In college, I browsed the bookstore and library quite a bit as a hobby. On one trip
 in particular during my senior year, I remember finding 
