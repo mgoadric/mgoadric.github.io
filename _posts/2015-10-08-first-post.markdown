@@ -5,9 +5,10 @@ date:   2015-10-07 13:10:04 -0500
 categories: first qa76
 ---
 
-I have found my home in [QA76](http://www.slc.bc.ca/mac/qa76.htm). 
+![My helpful screenshot]({{ "/assets/screenshot.jpg" | absolute_url }}){:class="img-fluid"}
+([image credit](http://www.each.usp.br/petsi/jornal/?p=380))
 
-![My helpful screenshot]({{ "/assets/screenshot.jpg" | absolute_url }})
+I have found my home in [QA76](http://www.slc.bc.ca/mac/qa76.htm). 
 
 In college, I browsed the bookstore and library quite a bit as a hobby. On one trip
 in particular during my senior year, I remember finding 
