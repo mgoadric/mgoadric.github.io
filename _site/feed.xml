@@ -1,13 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-01T10:27:16-05:00</updated><id>http://localhost:4000/</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2018/05/01/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-05-01T10:17:36-05:00</published><updated>2018-05-01T10:17:36-05:00</updated><id>http://localhost:4000/jekyll/update/2018/05/01/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2018/05/01/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-01T10:54:43-05:00</updated><id>http://localhost:4000/</id><title type="html">QA76</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Adding Tension and Excitement to Group Presentations</title><link href="http://localhost:4000/presentations/2015/11/27/theory-present.html" rel="alternate" type="text/html" title="Adding Tension and Excitement to Group Presentations" /><published>2015-11-27T12:10:04-06:00</published><updated>2015-11-27T12:10:04-06:00</updated><id>http://localhost:4000/presentations/2015/11/27/theory-present</id><content type="html" xml:base="http://localhost:4000/presentations/2015/11/27/theory-present.html">&lt;p&gt;In my &lt;a href=&quot;http://mark.goadrich.com/courses/csci380f15&quot;&gt;Theory of Computing&lt;/a&gt; course, student presentations comprise a major portion of our class time.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;In the past, I assigned a set of problems, and then in class I would ask students which 
+problems they wanted to present, giving those students with the least number of 
+completed presentations priority.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Many days, I was dissatisfied mostly with the level of interaction in class between the 
+students during a presentation. I felt like the presentations were mainly just for me as 
+the instructor, because:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;ul&gt;
+  &lt;li&gt;They were all working on the same problems, and therefore weren’t really teaching 
+each other new material.&lt;/li&gt;
+  &lt;li&gt;They discussed the questions and studied together before class.&lt;/li&gt;
+  &lt;li&gt;They didn’t want to ask questions and potentially hurt another student’s grade.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;This semester I am exploring a new method of grading which I hope is encouraging 
+collaboration and class discussions. The details can be found on the course homepage 
+linked above, and there are some kinks that I plan on fixing in future iterations of 
+the course, 
+but I think this system has been mostly successful. The main points are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Students are randomly assigned to groups.&lt;/li&gt;
+  &lt;li&gt;Problems are selected to be on the difficult end of the spectrum.&lt;/li&gt;
+  &lt;li&gt;Each group is assigned distinct yet equivalent problems.&lt;/li&gt;
+  &lt;li&gt;A student is randomly selected from the group and is then solely responsible 
+for presenting the group’s solution.&lt;/li&gt;
+  &lt;li&gt;Students must be in class to recieve points when they are awarded, even if they are not presenting.&lt;/li&gt;
+  &lt;li&gt;Extra points are awarded to students for asking constructive questions of other groups.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The equivalent-yet-distinct problems are creating much more discussion in class since they
+have not all necessarily worked through the complexities of problems not assigned to them.
+There is also some peer pressure to encourage good presentations, since the whole groups’
+grade hinges on the presentation of a randomly-selected member. Most students are 
+taking advantage of the points for asking questions to other groups. It is common 
+that the class finds minor typos or mistakes in a proof or automata construction, and
+everyone’s presentation skills are improving over the course of the semester.&lt;/p&gt;
+
+&lt;p&gt;One interesting piece that has added some fun tension to presentation days is the way I
+select the group member to present. I use an algorithm (described here in an
+&lt;a href=&quot;http://nbviewer.ipython.org/url/mark.goadrich.com/courses/csci380f15/Weighted%20Class%20Presentations.ipynb&quot;&gt;IPython notebook&lt;/a&gt;) that tends to pick members who
+have not presented recently, but could very well pick the same group member twice or three
+times in a row. Many times I can hear some mumbled prayers to &lt;a href=&quot;http://knowyourmeme.com/memes/rngesus&quot;&gt;RNGesus&lt;/a&gt;,
+although they often fall on deaf ears.&lt;/p&gt;
+
+&lt;p&gt;I’ll write a wrapup post after I read the course evaluations from my students, they might
+have a completely different perspective, and I’ll talk about the pieces that have been
+less than successful.&lt;/p&gt;
+
+&lt;!--
+The delay of presentations, revise to have a 1 week window
+
+Extra points rely on incorrect presentations.
+
+When a presentation is unsuccessful, reasign using random alg again
+
+tribute volunteers
+
+students absent when selected, affects whole group, to prevent them being forced out.
+
+One or two in each group are writing up solutions.
+--&gt;</content><author><name></name></author><summary type="html">In my Theory of Computing course, student presentations comprise a major portion of our class time.</summary></entry><entry><title type="html">Tuesday Talk</title><link href="http://localhost:4000/hendrix/2015/10/09/tuesday-talk.html" rel="alternate" type="text/html" title="Tuesday Talk" /><published>2015-10-09T13:10:04-05:00</published><updated>2015-10-09T13:10:04-05:00</updated><id>http://localhost:4000/hendrix/2015/10/09/tuesday-talk</id><content type="html" xml:base="http://localhost:4000/hendrix/2015/10/09/tuesday-talk.html">&lt;p&gt;Last month, I was invited to give a &lt;a href=&quot;https://www.hendrix.edu/tuesdaytalks/&quot;&gt;Tuesday Talk&lt;/a&gt; here at &lt;a href=&quot;http://hendrix.edu&quot;&gt;Hendrix&lt;/a&gt;, a series of talks about vocation and calling, going on now for about a decade. Each invitee is asked
+to speak on the simple question “What is my calling/vocation and how do I know?”
+and is free to interpret this question however they like.&lt;/p&gt;
+
+&lt;p&gt;Here are links to the &lt;a href=&quot;https://soundcloud.com/hendrixcollege/tuesdaytalks_goadrich&quot;&gt;audio&lt;/a&gt;
+and 
+&lt;a href=&quot;https://docs.google.com/document/d/1wLsjQR2WYCEezxD9mFOziGMOw4Y20u_1fH5FHh-uSO4/edit?usp=sharing&quot;&gt;text&lt;/a&gt;
+of my talk. I was thankful to be invited, I found it a wonderful opportunity to reflect on what led me here, although
+I was struck by the process of creating the narrative for my life. My talk is really only 
+based on a true story. Each decision, turning point, or motivation I mention (for instance, 
+my decision to take a job in San Antonio and subsequently leave that job after 5 months) 
+was much more complicated than
+I related, and I needed to simplify many parts to get to something with a
+beginning, middle and end.&lt;/p&gt;
+
+&lt;p&gt;Also, 
+besides &lt;a href=&quot;http://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453&quot;&gt;&lt;em&gt;Chaos&lt;/em&gt;&lt;/a&gt;
+and 
+&lt;a href=&quot;http://www.amazon.com/Turtles-Termites-Traffic-Jams-Explorations/dp/0262680939&quot;&gt;&lt;em&gt;Turtles, Termites and Traffic Jams&lt;/em&gt;&lt;/a&gt;,
+there were more influential books along my path here that I left out for the
+sake of brevity, including 
+&lt;a href=&quot;http://www.amazon.com/Gödel-Escher-Bach-Eternal-Golden/dp/0465026567/&quot;&gt;&lt;em&gt;Gödel Escher Bach&lt;/em&gt;&lt;/a&gt;,
+&lt;a href=&quot;http://www.amazon.com/How-Solve-It-Modern-Heuristics/dp/3540224947&quot;&gt;&lt;em&gt;How to Solve It: Modern Heuristics&lt;/em&gt;&lt;/a&gt;,
+&lt;a href=&quot;http://www.amazon.com/Zen-Art-Motorcycle-Maintenance-Inquiry/dp/0060589469/&quot;&gt;&lt;em&gt;Zen and the Art of Motorcycle Maintenance&lt;/em&gt;&lt;/a&gt;,
+and the previously mentioned 
+&lt;a href=&quot;http://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597/&quot;&gt;&lt;em&gt;Artificial Intelligence: A Modern Approach&lt;/em&gt;&lt;/a&gt;. 
+Perhaps I will dive into their
+influence in a later post.&lt;/p&gt;
+
+&lt;p&gt;Of course, I do abstraction all the time as an educator.
+I usually work through a messy, complicated topic in computer science, 
+looking for a good way to structure a 
+lesson or lab, and inevitably details are left out and modified to fit some
+overarching tale. But I had not critically abstracted on my own life story in quite
+some time,
+and it highlighted for me just how messy and complicated everyone’s life story must be.&lt;/p&gt;</content><author><name></name></author><summary type="html">Last month, I was invited to give a Tuesday Talk here at Hendrix, a series of talks about vocation and calling, going on now for about a decade. Each invitee is asked to speak on the simple question “What is my calling/vocation and how do I know?” and is free to interpret this question however they like.</summary></entry><entry><title type="html">First Post</title><link href="http://localhost:4000/jekyll/update/2015/10/07/first-post.html" rel="alternate" type="text/html" title="First Post" /><published>2015-10-07T13:10:04-05:00</published><updated>2015-10-07T13:10:04-05:00</updated><id>http://localhost:4000/jekyll/update/2015/10/07/first-post</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2015/10/07/first-post.html">&lt;p&gt;I have found my home in &lt;a href=&quot;http://www.slc.bc.ca/mac/qa76.htm&quot;&gt;QA76&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In college, I browsed the bookstore and library quite a bit as a hobby. On one trip
+in particular during my senior year, I remember finding 
+&lt;a href=&quot;http://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597/&quot;&gt;&lt;em&gt;Artificial Intelligence : A Modern Approach&lt;/em&gt;&lt;/a&gt;
+by Stuart Russell and Peter Norvig. Besides kicking off my interest in AI which would
+eventually turn into my Ph.D. thesis, I for some
+reason memorized the first portion of the 
+&lt;a href=&quot;http://www.loc.gov/catdir/cpso/lcco/&quot;&gt;Library of Congress Classification&lt;/a&gt;,
+QA76. This alphanumeric code became a signpost for me: Q for Science, A for Mathematics,
+and 76 for Computer Science. When I would spot it on a book,
+almost always I would find something of interest within.&lt;/p&gt;
+
+&lt;p&gt;This blog will be an exploration of my interests in computer science, education, 
+complexity, and game design, mostly sticking to topics
+in the QA76 category, thus the name of the blog. I hope to talk about my current work, 
+both research projects and classroom pedagogy, but also reflect on current computing 
+issues and links that fascinate me.&lt;/p&gt;
+
+&lt;p&gt;Glad to have you along for the ride.&lt;/p&gt;</content><author><name></name></author><summary type="html">I have found my home in QA76.</summary></entry></feed>
