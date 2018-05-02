@@ -8,8 +8,11 @@ categories: blogging
 It's been a few years, and with my recent site css refresh, it was time to restart
 the blog. I've made the jump to using [Jekyll](https://jekyllrb.com/) on 
 [Github pages](https://pages.github.com/), which looked
-extremely confusing the last time I researched it, but now makes complete sense. This 
-is still a work in progress, so expect some more style updates and rearrangement.
+extremely confusing the last time I researched it, but now 
+[makes complete sense](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/). This 
+is still a work in progress, so expect some more 
+[style updates](https://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)
+ and rearrangement.
 
 This coming year, I will be on sabbatical, my first after 11 years of teaching.
 Hooray! I'll be updating much more regularly as I work through my game development
