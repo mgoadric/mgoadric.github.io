@@ -12,7 +12,8 @@ extremely confusing the last time I researched it, but now
 [makes complete sense](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/). This 
 is still a work in progress, so expect some more 
 [style updates](https://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)
- and rearrangement.
+ and rearrangement as I add in [page navigation](https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)
+ and other features.
 
 This coming year, I will be on sabbatical, my first after 11 years of teaching.
 Hooray! I'll be updating much more regularly as I work through my game development
