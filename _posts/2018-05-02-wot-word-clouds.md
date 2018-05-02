@@ -1,24 +1,62 @@
 ---
 layout: post
-title:  "The Wheel Of Time - Word Clouds"
+title:  "Word Clouds for The Wheel of Time"
 date:   2018-05-02 8:10:04 -0500
 categories: wot computational-humanities
 ---
 
 [![BookCovers](/assets/wot/wheel-of-time-covers.png){:class="img-fluid"}](http://www.mymbuzz.com/2017/04/21/sony-is-developing-robert-jordans-wheel-of-time-for-tv/)
 
+We covered a fair amount of [Natural Language Processing](https://en.wikipedia.org/wiki/Natural-language_processing)
+in my recent [Computational Humanities](http://mark.goadrich.com/courses/csci270s18/) course
+this spring. As our running example text, I used selections from the epic fantasy series
+[The Wheel Of Time](https://en.wikipedia.org/wiki/The_Wheel_of_Time). This proved to be 
+a rich source of material for our explorations of how to quantify textual meaning and 
+writing style using computational tools.
 
-[Computational Humanities](http://mark.goadrich.com/courses/csci270s18/)
+After [visualizing letter frequency](http://nbviewer.jupyter.org/url/mark.goadrich.com/courses/csci270s18/code/Data%20Vizualization%20Day%201.ipynb), 
+for [The Eye of the World](https://en.wikipedia.org/wiki/The_Eye_of_the_World), 
+the first book in the series, we set out to determine if the word distribution 
+in the text matched the predicted distribution of [Zipf's Law](http://nbviewer.jupyter.org/url/mark.goadrich.com/courses/csci270s18/code/Zipfs%20Law.ipynb).
 
-[Jupyter Notebook](http://nbviewer.jupyter.org/url/mark.goadrich.com/courses/csci270s18/code/Word%20Cloud.ipynb)
+|Word|Frequency|
+|:----:|--------:|
+|the|19672|
+|and|8132|
+|to|7382|
+|a|6807|
+|he|6614|
+|of|6383|
+|his|4617|
+|in|4132|
+|was|3838|
+|it|3519|
 
-[stop words](http://mark.goadrich.com/courses/csci270s18/data/stop-word-list.txt)
+Frequency of words in The Eye of the World.
 
-[English words](http://mark.goadrich.com/courses/csci270s18/data/english2.txt)
+For a given text, we calculated the usage frequency of each word. But 
+as is typical, looking at the 
+top words did not reveal much about the content of the document. 
+Removing highly-used English words, or [stop words](http://mark.goadrich.com/courses/csci270s18/data/stop-word-list.txt),
+let us uncover more of the content, and we moved on to understanding the algorithms behind drawing 
+[word clouds](https://en.wikipedia.org/wiki/Tag_cloud), where words are plotted in
+an image with their 
+size proportional to their frequency in the document. 
 
-[Wordle](http://www.wordle.net/)
+In the end, we developed a first approximation to the [Wordle](http://www.wordle.net/)
+[algorithm](http://static.mrfeinberg.com/bv_ch03.pdf), using a monospaced font and
+ignoring the possibility of nesting words inside the nooks and crannies of other letters.
+And by utilizing a wordlist of [English words](http://mark.goadrich.com/courses/csci270s18/data/english2.txt),
+we could highlight those unique words that typically denote characters or locations with 
+red. You can follow along with the
+development and code with this [Jupyter Notebook](http://nbviewer.jupyter.org/url/mark.goadrich.com/courses/csci270s18/code/Word%20Cloud.ipynb).
 
-[algorithm](http://static.mrfeinberg.com/bv_ch03.pdf)
+I'm including a word cloud that I generated for each book in the series. A few things to note:
+the main character of the series, Rand al'Thor, is prominent in each of the clouds,
+although you can see when the attention shifts from him to the side-stories of other characters.
+Also, the system of magic in the world is very gendered, thus the high frequency of 
+man and woman in the books. I'll focus on the shifting cast of characters in a later post,
+then later pick up on the rise of abbreviations like *he'd*, *i've*, and *you're* next.
 
 # The Eye of the World
 
