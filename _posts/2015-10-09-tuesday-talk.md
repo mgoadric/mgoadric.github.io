@@ -3,6 +3,7 @@ layout: post
 title:  "Tuesday Talk"
 date:   2015-10-09 13:10:04 -0500
 categories: Hendrix
+comments: true
 ---
 
 Last month, I was invited to give a [Tuesday Talk](https://www.hendrix.edu/tuesdaytalks/) here at [Hendrix](http://hendrix.edu), a series of talks about vocation and calling, going on now for about a decade. Each invitee is asked

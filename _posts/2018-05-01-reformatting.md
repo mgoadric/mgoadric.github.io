@@ -3,6 +3,7 @@ layout: post
 title:  "Blog Reformatting and Rejuvenating"
 date:   2018-05-01 13:10:04 -0500
 categories: blogging
+comments: true
 ---
 
 It's been a few years, and with my recent site css refresh, it was time to restart

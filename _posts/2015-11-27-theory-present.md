@@ -3,6 +3,7 @@ layout: post
 title:  "Adding Tension and Excitement to Group Presentations"
 date:   2015-11-27 13:10:04 -0500
 categories: presentations
+comments: true
 ---
 ![sampling-for-presenter](/assets/group3present.png){:class="img-fluid"}
 

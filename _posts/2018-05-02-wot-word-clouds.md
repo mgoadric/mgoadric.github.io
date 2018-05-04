@@ -3,6 +3,7 @@ layout: post
 title:  "Word Clouds for The Wheel of Time"
 date:   2018-05-02 8:10:04 -0500
 categories: wot computational-humanities
+comments: true
 ---
 
 [![BookCovers](/assets/wot/wheel-of-time-covers.png){:class="img-fluid"}](http://www.mymbuzz.com/2017/04/21/sony-is-developing-robert-jordans-wheel-of-time-for-tv/)
