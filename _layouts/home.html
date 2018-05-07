@@ -5,12 +5,6 @@ layout: default
 <div class="home">
 <div class="row">
 <div class="col-md-6">
-          <img class="img-fluid" src="/assets/screenshot.jpg" alt="Library stacks">
-          <p />
-
-  {{ content }}
-</div>
-<div class="col-md-6">
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }} Blog Posts</h1>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
@@ -36,6 +30,12 @@ layout: default
       {%- endfor -%}
   {%- endif -%}
 
+</div>
+<div class="col-md-6">
+          <img class="img-fluid" src="/assets/screenshot.jpg" alt="Library stacks">
+          <p />
+
+  {{ content }}
 </div>
 </div>
 </div>
