@@ -30,5 +30,6 @@ Here's a list of references I found helpful in setting up and formatting this bl
 * [Adding Images](https://dev-notes.eu/2016/01/images-in-kramdown-jekyll/)
 * [Page Navigation](https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html)
 * [Markdown Tables](https://www.tablesgenerator.com/markdown_tables)
-* [Markdown Table CSS](https://stackoverflow.com/questions/28806135/jekyll-kramdown-how-to-display-table-border?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+* [Markdown Table CSS](https://stackoverflow.com/questions/28806135/jekyll-kramdown-how-to-display-table-border)
 * [Setting up Disqus Comments](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/)
+* [Internal Linking](https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links)
