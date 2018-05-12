@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Computing and The Wheel of Time - Part 1: Word Clouds"
+title:  "Computing Patterns in The Wheel of Time - Part 1: Word Clouds"
 date:   2018-05-02 8:10:04 -0500
 categories: wot computational-humanities
 comments: true
@@ -59,7 +59,9 @@ Also, the system of magic in the world is very gendered, thus the high frequency
 man and woman in the books. I'll focus on the shifting cast of characters in a later post,
 then later pick up on the rise of abbreviations like *he'd*, *i've*, and *you're* next.
 
-**Spoiler Alert** While these clouds don't convey any info about plot, they might
+**Spoiler Alert** 
+
+While these clouds don't convey any info about plot, they might
 give away some relevant info.
 
 # The Eye of the World
