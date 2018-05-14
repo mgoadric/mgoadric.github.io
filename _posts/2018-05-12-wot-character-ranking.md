@@ -61,8 +61,8 @@ Second, we examine the three young Aes Sedai. Their character arcs pick up steam
 as the series progresses, with their mission to track down the Black Ajah
 keeping them in focus for the first half of the series. Their paths diverge
 individually later on, yet they retain the narrative focus, with at least two of them
-found in the top 16 of each novel. Nynaeve is the top character while guiding
-Rand through his meetings with the Aiel, while Elayne becomes the series main focus 
+found in the top 16 of each novel. Nynaeve is the top character while 
+hunting down the Black Ajah, while Elayne becomes the series main focus 
 when she fights for the crown in Andor, and Egwene's circuitous rise to the Amrylin
 seat places her on top near the end of the series. Nynaeve is the most inconsistent
 character, dropping out of the top 16 for many books at the end.
