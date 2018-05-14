@@ -103,3 +103,14 @@ by battles with Trolloc hordes. Also, the Ashaman never move into the
 top 16 beyond a small emphasis in Crown of Swords or Path of Daggers.
 
 ![Outsiders Rank](/assets/wot/outsider-rank.png){:class="img-fluid"}
+
+# Conclusion
+
+At least in this series, using non-English words appears to be a good way
+to find the set of main characters. By mapping the characters to their 
+ranks instead of absolute frequency, we can ignore the size of each novel, and
+concentrate on their relative relationships. What other insights do
+these charts let you see? Are there other characters you 
+expected to see in these charts that are missing? Let me know in the comments, or
+remix the code yourself, I would love to know if you find these useful
+in thinking about the series. 
