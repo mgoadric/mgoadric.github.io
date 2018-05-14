@@ -17,7 +17,8 @@ we will look at how to cluster the novels. This will involve a few steps:
 
 As before I've linked to another [Jupyter Notebook](http://nbviewer.jupyter.org/url/mark.goadrich.com/courses/csci270s18/code/Lab%204%20-%20Document%20Clustering.ipynb),
 although the details are missing from this one because I used it as a lab assignment
-in the course. 
+in the course.  Some of what I implement is loosely based on 
+[another tutorial](http://brandonrose.org/clustering) about document clustering.
 
 ### Conversion to Vectors
 
