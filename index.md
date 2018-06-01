@@ -33,3 +33,4 @@ Here's a list of references I found helpful in setting up and formatting this bl
 * [Markdown Table CSS](https://stackoverflow.com/questions/28806135/jekyll-kramdown-how-to-display-table-border)
 * [Setting up Disqus Comments](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/)
 * [Internal Linking](https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links)
+* [Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/)
