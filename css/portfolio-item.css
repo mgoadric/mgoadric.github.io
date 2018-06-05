@@ -47,3 +47,9 @@ td{
 	padding: 3px;
     border:1px solid #000000;
 }
+
+blockquote{
+	margin: 30px;
+	padding: 10px;
+	background-color: #EEEEEE;
+}

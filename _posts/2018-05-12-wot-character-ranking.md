@@ -24,12 +24,10 @@ titles or last names.
 
 This leaves us with a full set of main characters and entitites in the series.
 
-```
-['Perrin', 'Aviendha', 'Elaida', 'Shaido', 'Gawyn', 'Cadsuane',
- 'Elayne', 'Lan', 'Trollocs', 'Seanchan', 'Rand', 'Min', 'Aiel',
- 'Egwene', 'Loial', 'Moiraine', 'Verin', 'Tuon', 'Siuan', 'Thom',
- 'Nynaeve', 'Birgitte', 'Ashaman', 'Faile', 'Mat']
-```
+>Perrin, Aviendha, Elaida, Shaido, Gawyn, Cadsuane,
+ Elayne, Lan, Trollocs, Seanchan, Rand, Min, Aiel,
+ Egwene, Loial, Moiraine, Verin, Tuon, Siuan, Thom,
+ Nynaeve, Birgitte, Ashaman, Faile, Mat
 
 Finally, I manually clustered these characters into five sets, and 
 plotted each cluster's rankings over time throughout the series. 
