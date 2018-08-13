@@ -9,7 +9,7 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Baggage4.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Baggage5.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -18,11 +18,10 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">RunningOutOfSpace</div>
+        <div class="title">Baggage Claim</div>
       </div>
     </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120206506-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120206506-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -30,5 +29,6 @@
 
   gtag('config', 'UA-120206506-1');
 </script>
+
   </body>
 </html>
