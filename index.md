@@ -34,3 +34,4 @@ Here's a list of references I found helpful in setting up and formatting this bl
 * [Setting up Disqus Comments](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/)
 * [Internal Linking](https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links)
 * [Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/)
+* [Missing Images in RSS](https://github.com/jekyll/jekyll/issues/1325)

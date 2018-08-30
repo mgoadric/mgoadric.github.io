@@ -104,7 +104,7 @@ of Midnight and A Memory of Light. The Shadow Rising and the Fires of Heaven are
 most distant after the first three novels, perhaps because of their
 unique settings of the Aiel waste and other locations?
 
-![TFIDF Clustering](/assets/wot/tfidf-upgma.png){:class="img-fluid"}
+![TFIDF Clustering]({{site.url}}/assets/wot/tfidf-upgma.png){:class="img-fluid"}
 
 # Word Choice Clustering
 
@@ -126,7 +126,7 @@ of writing Jordan had settled on in his later books, his style has echoes of the
 novels. Could this be a contributing factor to the warmer reception these
 last three novels received?
 
-![Term Frequency Clustering](/assets/wot/termfreq-upgma.png){:class="img-fluid"}
+![Term Frequency Clustering]({{site.url}}/assets/wot/termfreq-upgma.png){:class="img-fluid"}
 
 # Conclusion
 

@@ -8,7 +8,7 @@ comments: true
 
 My Ludum Dare 42 entry **Baggage Claim** is complete! 
 
-![baggage-cover-image.png](/assets/baggage-cover-image.png){:class="img-fluid"}
+![baggage-cover-image.png]({{site.url}}/assets/baggage-cover-image.png){:class="img-fluid"}
 
 It's a stressful microgame where you must clear luggage as fast as you can. Each new bag must be shifted on the carousel within 5 seconds of it arriving or you run out of space and the game is over. You score for every piece you get off the carousel.
 
@@ -46,7 +46,7 @@ I took the first two hours of the jam to write down various ideas inspired by th
 One I settled on the luggage idea, I set out to find some reference on coding up 
 smooth object movement on a curve, so I could use it for the rounded edged of the carousel belts. I quickly stumbled upon the [Hermite Spline Controller](http://wiki.unity3d.com/index.php/Hermite_Spline_Controller) page that was an amazing reference and starting point for my code! 
 
-![750px-SplinePicture.png](/assets/750px-SplinePicture.png){:class="img-fluid"}
+![750px-SplinePicture.png]({{site.url}}/assets/750px-SplinePicture.png){:class="img-fluid"}
 
 From the above image, it looked exactly like what I would need with some tweaks, you set down reference points, and your object could loop through them smoothly, and all the math is hidden. I had just spent the last two months coding on a [separate research project](https://github.com/mgoadric/cardstock) in C#, and my skills with Visual Studio were fresh, time to get the latest updates to Unity and start coding!
 
@@ -67,7 +67,7 @@ First up was learning how the library worked. The big lesson is that when you se
     
 Next, time to get more things moving on the screen. All of them on one belt would follow the same route, and I was lucky the library script was abstracted in the right way so I could make multiple moving objects from the same path waypoints. I found a nice free image, and whala, moving luggage!
 
-![2018-08-11 10.05.03.gif](/assets/2018-08-11 10.05.03.gif){:class="img-fluid"}
+![2018-08-11 10.05.03.gif]({{site.url}}/assets/2018-08-11 10.05.03.gif){:class="img-fluid"}
 
 ### Reverse belt
 
@@ -77,13 +77,13 @@ A little bit more coding, and I could reverse the direction of the objects by lo
     
 I had luggage flying around now, but to make it move from one belt to another, I needed to separate out the luggage from the conveyor belt. Time to make some more gameObjects, and give the Luggage and BeltPieces different scripts. I ended up with the BeltPiece having a Luggage component, and it would detect collisions with other BeltPieces to transfer luggage. The Luggage script would be in charge of doing a lerp to move from one BeltPiece to the next. I also set up a LuggageMaker in the center, and gave everything RigidBody2Ds and Collider2Ds to detect when pieces were close.
 
-![ezgif.com-gif-maker.gif](/assets/ezgif.com-gif-maker.gif){:class="img-fluid"}
+![ezgif.com-gif-maker.gif]({{site.url}}/assets/ezgif.com-gif-maker.gif){:class="img-fluid"}
 
 ### Automated movement
 
 The pieces were coming together, now time to focus on game flow. To know if my idea of movement between the carousels was going to work, I created some methods to fire every time a valid collision occured. By putting off the user interaction, I could see the best-case scenario of playing the game to watch for buildup scenarios. In this stage I adjusted some of the collision sizes, moved a few waypoints to give better opportunity for collisions, added some connection LineRenderers and highlighted matches with opacity settings. 
 
-![ezgif.com-gif-maker(1).gif](/assets/ezgif.com-gif-maker(1).gif){:class="img-fluid"}
+![ezgif.com-gif-maker(1).gif]({{site.url}}/assets/ezgif.com-gif-maker(1).gif){:class="img-fluid"}
     
 ### User directed movement
     
@@ -97,7 +97,7 @@ Also, to have the game be replayable, a little trick was necessary. In Unity, yo
 
 Here is the final gameplay!
 
-![2018-08-13 11.17.40.gif](/assets/2018-08-13 11.17.40.gif){:class="img-fluid"}
+![2018-08-13 11.17.40.gif]({{site.url}}/assets/2018-08-13 11.17.40.gif){:class="img-fluid"}
 
 ## Abstraction can come later
 

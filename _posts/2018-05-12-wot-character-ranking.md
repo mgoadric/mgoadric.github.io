@@ -51,7 +51,7 @@ Mat is more of a constant presence across the series, while Perrin drops out of 
 top 16 twice. We can also see that the series ends where it began with a focus on
 these three characters.
 
-![Male Trio Character Ranks](/assets/wot/mtrio-rank.png){:class="img-fluid"}
+![Male Trio Character Ranks]({{site.url}}/assets/wot/mtrio-rank.png){:class="img-fluid"}
 
 # Egewene, Elayne, and Nynaeve
 
@@ -65,7 +65,7 @@ when she fights for the crown in Andor, and Egwene's circuitous rise to the Amry
 seat places her on top near the end of the series. Nynaeve is the most inconsistent
 character, dropping out of the top 16 for many books at the end.
 
-![Female Trio Character Ranks](/assets/wot/ftrio-rank.png){:class="img-fluid"}
+![Female Trio Character Ranks]({{site.url}}/assets/wot/ftrio-rank.png){:class="img-fluid"}
 
 # Moiraine, Siuan, Cadsuane, and Elaida
 
@@ -79,7 +79,7 @@ wanes near the end, and after their last hurrah in The Gathering Storm, all
 four elder Aes Sedai drop out of the top 16 rankings for the last two books, 
 leaving the field open for the young characters to complete their rise.
 
-![Elder Aes Sedai Character Ranks](/assets/wot/elder-rank.png){:class="img-fluid"}
+![Elder Aes Sedai Character Ranks]({{site.url}}/assets/wot/elder-rank.png){:class="img-fluid"}
 
 # Aviendha, Birgitte, Faile, Gawyn, Lan, Loial, Min, Thom, and Verin
 
@@ -89,7 +89,7 @@ in the novels, but mostly hover in the low teens rankings. Aside from Min,
 this cluster pops in and out of focus across the novels, aiding in the main
 narrative as needed.
 
-![Supporting Character Ranks](/assets/wot/supporting-rank.png){:class="img-fluid"}
+![Supporting Character Ranks]({{site.url}}/assets/wot/supporting-rank.png){:class="img-fluid"}
 
 # Trollocs, Aiel, Seanchan, and Ashaman
 
@@ -100,7 +100,7 @@ in the second quarter, the invading Seanchan in the third, with the series booke
 by battles with Trolloc hordes. Also, the Ashaman never move into the 
 top 16 beyond a small emphasis in Crown of Swords or Path of Daggers.
 
-![Outsiders Rank](/assets/wot/outsider-rank.png){:class="img-fluid"}
+![Outsiders Rank]({{site.url}}/assets/wot/outsider-rank.png){:class="img-fluid"}
 
 # Conclusion
 

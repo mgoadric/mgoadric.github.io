@@ -23,7 +23,7 @@ available for download. Our assignment had the students combine the location dat
 for schools and tornado sirens to visualize the coverage of tornado warnings, with the
 following image as the eventual goal of the lab.
 
-![Tornado Sirens](/assets/cocalcscatterfinal.png){:class="img-fluid"}
+![Tornado Sirens]({{site.url}}/assets/cocalcscatterfinal.png){:class="img-fluid"}
 
 I've spent some time this week revising this lab, inspired by another SIGCSE mailing 
 list post on methods to incorporate [Jupyter Notebooks](http://jupyter.org/) 
@@ -46,7 +46,7 @@ and [some](http://darribas.org/gds15/content/labs/lab_03.html)
 [tutorial](https://stackoverflow.com/questions/47847252/how-do-i-set-matplotlib-plot-to-no-fill)
 [help](http://www.acgeospatial.co.uk/geopandas-shapefiles-jupyter/).
 
-![Proposed Tornado Sirens](/assets/proposed_heatmap_coverage.png){:class="img-fluid"}
+![Proposed Tornado Sirens]({{site.url}}/assets/proposed_heatmap_coverage.png){:class="img-fluid"}
 
 The schools are plotted in white, the current siren locations are green, and the proposed 
 new sirens are in red. We can still see Carolyn Lewis Elementary School (CLES) is at the

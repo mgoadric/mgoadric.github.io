@@ -5,7 +5,7 @@ date:   2015-11-27 13:10:04 -0500
 categories: presentations
 comments: true
 ---
-![sampling-for-presenter](/assets/group3present.png){:class="img-fluid"}
+![sampling-for-presenter]({{site.url}}/assets/group3present.png){:class="img-fluid"}
 
 In my [Theory of Computing](http://mark.goadrich.com/courses/csci380f15) course, student presentations comprise a major portion of our class time. 
 

@@ -6,7 +6,7 @@ categories: wot computational-humanities
 comments: true
 ---
 
-[![BookCovers](/assets/wot/wheel-of-time-covers.png){:class="img-fluid"}](http://www.mymbuzz.com/2017/04/21/sony-is-developing-robert-jordans-wheel-of-time-for-tv/)
+[![BookCovers]({{site.url}}/assets/wot/wheel-of-time-covers.png){:class="img-fluid"}](http://www.mymbuzz.com/2017/04/21/sony-is-developing-robert-jordans-wheel-of-time-for-tv/)
 
 We covered a fair amount of [Natural Language Processing](https://en.wikipedia.org/wiki/Natural-language_processing)
 in my recent [Computational Humanities](http://mark.goadrich.com/courses/csci270s18/) course
@@ -66,57 +66,57 @@ give away some relevant info.
 
 # The Eye of the World
 
-![EyeOfTheWorld](/assets/wot/EyeOfTheWorld-wc.png){:class="img-fluid"}
+![EyeOfTheWorld]({{site.url}}/assets/wot/EyeOfTheWorld-wc.png){:class="img-fluid"}
 
 # The Great Hunt
 
-![GreatHunt](/assets/wot/GreatHunt-wc.png){:class="img-fluid"}
+![GreatHunt]({{site.url}}/assets/wot/GreatHunt-wc.png){:class="img-fluid"}
 
 # The Dragon Reborn
 
-![EyeOfTheWorld](/assets/wot/DragonReborn-wc.png){:class="img-fluid"}
+![EyeOfTheWorld]({{site.url}}/assets/wot/DragonReborn-wc.png){:class="img-fluid"}
 
 # The Shadow Rising
 
-![ShadowRising](/assets/wot/ShadowRising-wc.png){:class="img-fluid"}
+![ShadowRising]({{site.url}}/assets/wot/ShadowRising-wc.png){:class="img-fluid"}
 
 # The Fires of Heaven
 
-![FiresOfHeaven](/assets/wot/FiresOfHeaven-wc.png){:class="img-fluid"}
+![FiresOfHeaven]({{site.url}}/assets/wot/FiresOfHeaven-wc.png){:class="img-fluid"}
 
 # Lord of Chaos
 
-![LordOfChaos](/assets/wot/LordOfChaos-wc.png){:class="img-fluid"}
+![LordOfChaos]({{site.url}}/assets/wot/LordOfChaos-wc.png){:class="img-fluid"}
 
 # A Crown of Swords
 
-![CrownOfSwords](/assets/wot/CrownOfSwords-wc.png){:class="img-fluid"}
+![CrownOfSwords]({{site.url}}/assets/wot/CrownOfSwords-wc.png){:class="img-fluid"}
 
 # The Path of Daggers
 
-![PathOfDaggers](/assets/wot/PathOfDaggers-wc.png){:class="img-fluid"}
+![PathOfDaggers]({{site.url}}/assets/wot/PathOfDaggers-wc.png){:class="img-fluid"}
 
 # Winter's Heart
 
-![WintersHeart](/assets/wot/WintersHeart-wc.png){:class="img-fluid"}
+![WintersHeart]({{site.url}}/assets/wot/WintersHeart-wc.png){:class="img-fluid"}
 
 # Crossroads of Twilight
 
-![CrossroadsOfTwilight](/assets/wot/CrossroadsOfTwilight-wc.png){:class="img-fluid"}
+![CrossroadsOfTwilight]({{site.url}}/assets/wot/CrossroadsOfTwilight-wc.png){:class="img-fluid"}
 
 # Knife of Dreams
 
-![KnifeOfDreams](/assets/wot/KnifeOfDreams-wc.png){:class="img-fluid"}
+![KnifeOfDreams]({{site.url}}/assets/wot/KnifeOfDreams-wc.png){:class="img-fluid"}
 
 # The Gathering Storm
 
-![GatheringStorm](/assets/wot/GatheringStorm-wc.png){:class="img-fluid"}
+![GatheringStorm]({{site.url}}/assets/wot/GatheringStorm-wc.png){:class="img-fluid"}
 
 # Towers of Midnight
 
-![TowersOfMidnight](/assets/wot/TowersOfMidnight-wc.png){:class="img-fluid"}
+![TowersOfMidnight]({{site.url}}/assets/wot/TowersOfMidnight-wc.png){:class="img-fluid"}
 
 # A Memory of Light
 
-![MemoryOfLight](/assets/wot/MemoryOfLight-wc.png){:class="img-fluid"}
+![MemoryOfLight]({{site.url}}/assets/wot/MemoryOfLight-wc.png){:class="img-fluid"}
 
