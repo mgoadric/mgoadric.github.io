@@ -60,7 +60,7 @@ turned out to be tedious in person. Just like in coding, with game rules you alw
 to simplify, and it felt great to cut away at the extraneous pieces. Nothing compares
 to getting in an actual playtest with players to see what works.
 
-![Mardi Gras Map](/assets/games/mardigrasmap.png){:class="img-fluid"}
+![Mardi Gras Map]({{site.url}}/assets/games/mardigrasmap.png){:class="img-fluid"}
 
 I'm looking forward
 to playing again to see if I cut too much, and have already made progress on redesigning
@@ -119,7 +119,7 @@ game system. This included very nice tiles and a bright color scheme, an excelle
 from my homemade version many years ago that I used to 
 design [Cell Management](http://www.piecepack.org/rules/CellManagement.pdf).
 
-[![Fujisan](/assets/games/fujisanbgg.jpg){:class="img-fluid"}](https://boardgamegeek.com/image/2850129/piecepack)
+[![Fujisan]({{site.url}}/assets/games/fujisanbgg.jpg){:class="img-fluid"}](https://boardgamegeek.com/image/2850129/piecepack)
 
 James was interested in the probability that a random setup would be unsolvable,
 so I flexed my [data-structure](http://mark.goadrich.com/courses/csci151s17/) 

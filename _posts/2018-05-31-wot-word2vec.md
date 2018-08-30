@@ -6,7 +6,7 @@ categories: wot computational-humanities
 comments: true
 ---
 
-![TFIDF Clustering](/assets/wot/word2veccluster.png){:class="img-fluid"}
+![TFIDF Clustering]({{site.url}}/assets/wot/word2veccluster.png){:class="img-fluid"}
 
 So far, we've looked at using [word clouds]({% post_url 2018-05-02-wot-word-clouds %}) and
 [character rankings]({% post_url 2018-05-12-wot-character-ranking %}),
