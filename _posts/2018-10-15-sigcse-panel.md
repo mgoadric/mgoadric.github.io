@@ -3,6 +3,7 @@ layout: post
 title:  "SIGCSE Civic Engagement Panel Accepted"
 date:   2018-10-15 13:12:04 -0500
 categories: SIGCSE civic-engagement
+comments: true
 ---
 
 Hooray, my [panel proposal]({% post_url 2018-08-29-civic-hacking %}) for 

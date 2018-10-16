@@ -3,6 +3,7 @@ layout: post
 title:  "LDJam Update"
 date:   2018-10-15 13:10:04 -0500
 categories: ldjam innovation
+comments: true
 ---
 
 It's been over a month since my last update. I've had my head down on some projects, but
