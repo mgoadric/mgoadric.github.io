@@ -35,3 +35,4 @@ Here's a list of references I found helpful in setting up and formatting this bl
 * [Internal Linking](https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links)
 * [Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/)
 * [Missing Images in RSS](https://github.com/jekyll/jekyll/issues/1325)
+* [Category Pages](https://kylewbanks.com/blog/creating-category-pages-in-jekyll-without-plugins)

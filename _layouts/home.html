@@ -21,7 +21,6 @@ layout: default
         
 		<h6><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a></h6>
 
-
         {%- if site.show_excerpts -%}
           {{ post.content | markdownify | strip_html | truncatewords: 30 }}
           <!--{{ post.excerpt }} -->
