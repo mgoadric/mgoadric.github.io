@@ -9,7 +9,7 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HeartsWebGL2.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/OurHearts.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -18,8 +18,26 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">What We Hold In Our Hearts</div>
+        <div class="title">What We Hold In Our Hearts : Goadrich Games</div>
+          <div class="description">
+How many treasured items can you keep hold of when you run? Can you make it to the next safehouse alive? 
+Remember, that what we can’t hold in our hands, we hold in our hearts.
+<p />
+Select items with the number keys, then run!
+<p />
+Keep hitting "<" to move left, and ">" to move right. The faster you move, the clumsier you get. 
+Move too slow, however, and they catch you.</div>
+</div>
       </div>
     </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120206506-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-120206506-1');
+</script>
+
   </body>
 </html>
