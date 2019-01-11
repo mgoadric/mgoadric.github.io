@@ -2,7 +2,7 @@
 layout: post
 title:  "New Blog - The Shape of Card Games"
 date:   2019-01-10 12:10:04 -0500
-categories: cardstock recycle
+categories:  recycle cardstock
 comments: true
 ---
 I spent much of November coding up new card games in 
