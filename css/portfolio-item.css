@@ -34,6 +34,8 @@ body {
 
 table{
     border-collapse: collapse;
+    border-style: hidden;
+
     border-spacing: 0;
     border:2px solid #ff0000;
 }
@@ -46,6 +48,15 @@ th{
 td{
 	padding: 3px;
     border:1px solid #000000;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.instructor {
+	background-color: #f2f2f2;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
 }
 
 blockquote{
