@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-  </head>
     <title>Dogs are great!</title>
+  </head>
   <body>
     <div id="heading">
       Animals are awesome (except cats). Here are some awesome animals.
+    </div>
       <ul>
         <li class="animal">Dog</li>
         <li class="animal">Mouse</li>
@@ -13,6 +14,29 @@
         <li class="animal">Lemur</li>
       </ul>
       <img width="300" src="images/dogs.jpeg">
-    </div>
+    <script>
+      var x = 2 + 2;
+      console.log(x);
+      console.log("This is a test!!!!");
+      //document.body.innerHTML = "Hello";
+
+      var headingElement = document.getElementById("heading");
+      headingElement.innerHTML = "ALL ABOUT CATS!!";
+
+      var nameElements = document.getElementsByClassName("animal");
+      console.log(nameElements[2]);
+      for (let i = 0; i < nameElements.length; i++) {
+        nameElements[i].innerHTML = "cat";
+      }
+
+      var imageElements = document.getElementsByTagName("img");
+      for (let i = 0; i < imageElements.length; i++) {
+        imageElements[i].src = "images/cat.jpg";
+        imageElements[i].width = 400;
+      }
+
+
+
+    </script>
   </body>
 </html>
