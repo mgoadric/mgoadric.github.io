@@ -14,26 +14,37 @@
         <li class="animal">Lemur</li>
       </ul>
       <img width="300" src="images/dogs.jpeg">
+      <p></p>
+      <input id="clicker" type="button" value="DO NOT CLICK"></input>
     <script>
-      var x = 2 + 2;
-      console.log(x);
-      console.log("This is a test!!!!");
-      //document.body.innerHTML = "Hello";
 
-      var headingElement = document.getElementById("heading");
-      headingElement.innerHTML = "ALL ABOUT CATS!!";
+      var catRebellion = function() {
+        var x = 2 + 2;
+        console.log(x);
+        console.log("This is a test!!!!");
+        //document.body.innerHTML = "Hello";
 
-      var nameElements = document.getElementsByClassName("animal");
-      console.log(nameElements[2]);
-      for (let i = 0; i < nameElements.length; i++) {
-        nameElements[i].innerHTML = "cat";
+        var imageElements = document.getElementsByTagName("img");
+        for (let i = 0; i < imageElements.length; i++) {
+          imageElements[i].src = "images/cat.jpg";
+          imageElements[i].width = 400;
+        }
+
+
+        var headingElement = document.getElementById("heading");
+        headingElement.innerHTML = "ALL ABOUT CATS!!";
+
+        var nameElements = document.getElementsByClassName("animal");
+        console.log(nameElements[2]);
+        for (let i = 0; i < nameElements.length; i++) {
+          nameElements[i].innerHTML = "cat";
+        }
+
+        clickButton.remove();
       }
 
-      var imageElements = document.getElementsByTagName("img");
-      for (let i = 0; i < imageElements.length; i++) {
-        imageElements[i].src = "images/cat.jpg";
-        imageElements[i].width = 400;
-      }
+      var clickButton = document.getElementById("clicker");
+      clickButton.addEventListener("click", catRebellion);
 
 
 
