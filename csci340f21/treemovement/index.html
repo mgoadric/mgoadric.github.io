@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="root">This is the root</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        console.log("hello");
+        var r = $("#root");
+        console.log(r);
+        r.append($("<p></p>").text("append"));
+        r.prepend($("<p></p>").text("prepend"));
+        r.before($("<p></p>").text("before"));
+        r.after($("<p></p>").text("after"));
+      });
+    </script>
+
+  </body>
+</html>
