@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5822a">
+    <meta property="og:title" content="The Hendrix College Campus Arboretum">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://www.hendrix.edu/content2/images/altusbell.jpg">
+    <meta property="og:site_name" content="Hendrix College">
+    <meta property="og:description" content="&quot;Consistent with its community orientation and the educational goals of Hendrix College, the development of the campus arboretum was intended to provide an educational center for not only Hendrix College, but for the other colleges, public schools, and the general public in the Central Arkansas area, as well as for ">
+    <meta property="fb:admins" content="57301304">
+    <meta property="fb:app_id" content="160383297496277">
+    <link rel="stylesheet" type="text/css" href="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/ektron.stylesheet.ashx">
+    <link href="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/css" rel="stylesheet" type="text/css">
+    <link href="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/css(1)" rel="stylesheet" type="text/css">
+    <link href="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/style3.css" rel="stylesheet">
+    <link href="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/e.min.css" rel="stylesheet">
+    <link href="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/font-awesome.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin="" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+    <title>	The Hendrix College Campus Arboretum | Hendrix College </title>
+</head>
+
+<body id="ctl00_ctl00_UiMasterBody" style="zoom: 1;">
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWBMBP"
+                height="0" width="0" style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    <a id="pageTop"></a>
+    <form method="post" id="aspnetForm">
+        <div class="aspNetHidden">
+            <input type="hidden" name="ctl00_ctl00_BodyContent_ScriptManager1_HiddenField" id="ctl00_ctl00_BodyContent_ScriptManager1_HiddenField" value="">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="EktronClientManager" id="EktronClientManager" value="-1759591071,-1228755533,-569449246,-1939951303,-1080527330,-1687560804,-1388997516,2009761168,27274999,1979897163,-422906301,-1818005853,561009152,1762586108,1881432062,1080084488,-1562465382,1338359439">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3ODcxMzkyODMPFgoeCE1hc3RIZWFkBQdCaW9sb2d5HgxDb250ZW50VGl0bGUFJFRoZSBIZW5kcml4IENvbGxlZ2UgQ2FtcHVzIEFyYm9yZXR1bR4GTWVudUlEKClZU3lzdGVtLkludDY0LCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkDMTc3HhBDdXJyZW50Q29udGVudElEKCsEBDM2NDUeD1NlY29uZGFyeU1lbnVJRCgrBAQxMDk4FgJmD2QWAmYPZBYCAgMPZBYCZhBkZBYGAgEPZBYIAgMPFgIeC18hSXRlbUNvdW50AgcWDmYPZBYCZg8VAgcvZW5yb2xsB0RlcG9zaXRkAgEPZBYCZg8VAg8vbGlmZWF0aGVuZHJpeC8PTGlmZSBhdCBIZW5kcml4ZAICD2QWAmYPFQILL2FjYWRlbWljcy8JQWNhZGVtaWNzZAIDD2QWAmYPFQIHL3Zpc2l0LwhWaXNpdCBVc2QCBA9kFgJmDxUCDi9maW5hbmNpYWxhaWQvDkNvc3QgJmFtcDsgQWlkZAIFD2QWAmYPFQILL2FkbWlzc2lvbi8JQWRtaXNzaW9uZAIGD2QWAmYPFQIGL2FwcGx5BUFwcGx5ZAIFDxYCHwUCBBYIZg9kFgJmDxUCEGN1cnJlbnRzdHVkZW50cy8IU3R1ZGVudHNkAgEPZBYCZg8VAghwYXJlbnRzLwdQYXJlbnRzZAICD2QWAmYPFQIHYWx1bW5pLwZBbHVtbmlkAgMPZBYCZg8VAg1mYWN1bHR5c3RhZmYvDUZhY3VsdHkvU3RhZmZkAgkPFgIfBQIEFghmD2QWAmYPFQIQY3VycmVudHN0dWRlbnRzLwhTdHVkZW50c2QCAQ9kFgJmDxUCCHBhcmVudHMvB1BhcmVudHNkAgIPZBYCZg8VAgdhbHVtbmkvBkFsdW1uaWQCAw9kFgJmDxUCDWZhY3VsdHlzdGFmZi8NRmFjdWx0eS9TdGFmZmQCDw8WAh8FAgcWDmYPZBYCZg8VAgcvZW5yb2xsB0RlcG9zaXRkAgEPZBYCZg8VAg8vbGlmZWF0aGVuZHJpeC8PTGlmZSBhdCBIZW5kcml4ZAICD2QWAmYPFQILL2FjYWRlbWljcy8JQWNhZGVtaWNzZAIDD2QWAmYPFQIHL3Zpc2l0LwhWaXNpdCBVc2QCBA9kFgJmDxUCDi9maW5hbmNpYWxhaWQvDkNvc3QgJmFtcDsgQWlkZAIFD2QWAmYPFQILL2FkbWlzc2lvbi8JQWRtaXNzaW9uZAIGD2QWAmYPFQIGL2FwcGx5BUFwcGx5ZAIDD2QWCAIHDxYCHgRUZXh0BSRUaGUgSGVuZHJpeCBDb2xsZWdlIENhbXB1cyBBcmJvcmV0dW1kAgkPZBYCAgEPDxYGHgVUaXRsZQUkVGhlIEhlbmRyaXggQ29sbGVnZSBDYW1wdXMgQXJib3JldHVtHhNDYXRhbG9nSWNvbkltYWdlVXJsBS4vV29ya0FyZWEvaW1hZ2VzL2FwcGxpY2F0aW9uL2ljb25fZG9jdW1lbnQuZ2lmHhFUaXRsZUljb25JbWFnZVVybGVkZAILDw8WDh4ISGlkZU1lbnVoHg1EZWZhdWx0TWVudUlkKCsEAzE3Nx4QU2VjdGlvblRpdGxlVGV4dAUmQmlvbG9neSBhbmQgSGVhbHRoIFNjaWVuY2VzIERlcGFydG1lbnQeD1NlY3Rpb25UaXRsZVVybAUKfi9iaW9sb2d5Lx4PVGFyZ2V0Q29udGVudElEKCsEBDM2NDUeEUN1cnJlbnRDb250ZW50VXJsBR0vYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9MzY0NR4PU2Vjb25kYXJ5TWVudUlkKCsEBDEwOThkFgJmD2QWAmYPZBYEZg8WAh8FAg0WGmYPZBYEZg8VAwkgY2xhc3M9IiJeIGhyZWY9Jy9DYXRhbG9nL0FjYWRlbWljX0RlcGFydG1lbnRzX2FuZF9Qcm9ncmFtcy9CaW9sb2d5X2FuZF9IZWFsdGhfU2NpZW5jZXMvJyB0YXJnZXQ9J19zZWxmJxNEZWdyZWUgUmVxdWlyZW1lbnRzZAIBDxYCHwVmZAIBD2QWBGYPFQMJIGNsYXNzPSIibiBocmVmPScvQ2F0YWxvZy9BY2FkZW1pY19EZXBhcnRtZW50c19hbmRfUHJvZ3JhbXMvQmlvbG9neV9hbmRfSGVhbHRoX1NjaWVuY2VzLyNjb3Vyc2VzQm9va21hcmsnIHRhcmdldD0nX3NlbGYnE0NvdXJzZSBEZXNjcmlwdGlvbnNkAgEPFgIfBWZkAgIPZBYEZg8VAwkgY2xhc3M9IiI1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD04NzM4OScgdGFyZ2V0PSdfc2VsZicOTGVhcm5pbmcgR29hbHNkAgEPFgIfBWZkAgMPZBYEZg8VAwkgY2xhc3M9IiInIGhyZWY9Jy9iaW9sb2d5L2ZhY3VsdHknIHRhcmdldD0nX3NlbGYnEUZhY3VsdHkgYW5kIFN0YWZmZAIBDxYCHwVmZAIED2QWBGYPFQMJIGNsYXNzPSIiNCBocmVmPScvYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9MzYyMicgdGFyZ2V0PSdfc2VsZicLQW4gT3ZlcnZpZXdkAgEPFgIfBWZkAgUPZBYEZg8VAwkgY2xhc3M9IiJeIGhyZWY9Jy9DYXRhbG9nL0FjYWRlbWljX0RlcGFydG1lbnRzX2FuZF9Qcm9ncmFtcy9CaW9sb2d5X2FuZF9IZWFsdGhfU2NpZW5jZXMvJyB0YXJnZXQ9J19zZWxmJxRIZWFsdGggU2NpZW5jZSBNYWpvcmQCAQ8WAh8FZmQCBg9kFgRmDxUDCSBjbGFzcz0iIlQgaHJlZj0naHR0cHM6Ly93d3cuaGVuZHJpeC5lZHUvcHJlcHJvZmVzc2lvbmFsL2RlZmF1bHQuYXNweD9pZD00MDcwNycgdGFyZ2V0PSdfc2VsZichUHJlLVByb2Zlc3Npb25hbCBIZWFsdGggUmVzb3VyY2VzZAIBDxYCHwVmZAIHD2QWBGYPFQMJIGNsYXNzPSIiViBocmVmPSdodHRwOi8vd3d3Mi5oZW5kcml4LmVkdS9iaW9sb2d5L2RlYXJvbGYvc3VtbWVyMTVyc3JjaGluZGV4Lmh0bWwnIHRhcmdldD0nX3NlbGYnCFJlc2VhcmNoZAIBDxYCHwVmZAIID2QWBGYPFQMJIGNsYXNzPSIiNCBocmVmPScvYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9NDI3NicgdGFyZ2V0PSdfc2VsZicKRmFjaWxpdGllc2QCAQ8WAh8FZmQCCQ9kFgRmDxUDCSBjbGFzcz0iIjQgaHJlZj0nL2Jpb2xvZ3kvYmlvbG9neS5hc3B4P2lkPTM2MjYnIHRhcmdldD0nX3NlbGYnE0RlcGFydG1lbnRhbCBBd2FyZHNkAgEPFgIfBWZkAgoPZBYEZg8VAwkgY2xhc3M9IiI0IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MzY3JyB0YXJnZXQ9J19zZWxmJx5SZXNvdXJjZXMgZm9yIEJpb2xvZ3kgU3R1ZGVudHNkAgEPFgIfBWZkAgsPZBYEZg8VAwkgY2xhc3M9IiJRIGhyZWY9Jy9pbnRlcm5hdGlvbmFscHJvZ3JhbXMvaW50ZXJuYXRpb25hbHByb2dyYW1zLmFzcHg/aWQ9MzUzMTgnIHRhcmdldD0nX3NlbGYnHVN1bW1lciBTZW1lc3RlciBpbiBDb3N0YSBSaWNhZAIBDxYCHwVmZAIMD2QWBGYPFQMNIGNsYXNzPSJuZXN0IkYgaHJlZj0nL1dvcmtBcmVhL2xpbmtpdC5hc3B4P0xpbmtJZGVudGlmaWVyPUlEJkl0ZW1JRD00MTExNycgdGFyZ2V0PScnE1RoZSBBcmthbnNhcyBHYXJkZW5kAgEPFgIfBQIHFg5mD2QWBGYPFQQJIGNsYXNzPSIiNSBocmVmPScvYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9NDExMTgnIHRhcmdldD0nX3NlbGYnNSBocmVmPScvYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9NDExMTgnIHRhcmdldD0nX3NlbGYnEFJhcmUgYW5kIEVuZGVtaWNkAgEPFgIfBWZkAgEPZBYEZg8VBAkgY2xhc3M9IiI1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MTExOScgdGFyZ2V0PSdfc2VsZic1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MTExOScgdGFyZ2V0PSdfc2VsZicZQnV0dGVyZmx5IGFuZCBIdW1taW5nYmlyZGQCAQ8WAh8FZmQCAg9kFgRmDxUECSBjbGFzcz0iIjUgaHJlZj0nL2Jpb2xvZ3kvYmlvbG9neS5hc3B4P2lkPTQxMTIwJyB0YXJnZXQ9J19zZWxmJzUgaHJlZj0nL2Jpb2xvZ3kvYmlvbG9neS5hc3B4P2lkPTQxMTIwJyB0YXJnZXQ9J19zZWxmJwNCb2dkAgEPFgIfBWZkAgMPZBYEZg8VBAkgY2xhc3M9IiI1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MTEyMScgdGFyZ2V0PSdfc2VsZic1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MTEyMScgdGFyZ2V0PSdfc2VsZicYTmF0dXJhbCBUcmVlcyBhbmQgUGxhbnRzZAIBDxYCHwVmZAIED2QWBGYPFQQJIGNsYXNzPSIiNSBocmVmPScvYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9NDExMjInIHRhcmdldD0nX3NlbGYnNSBocmVmPScvYmlvbG9neS9iaW9sb2d5LmFzcHg/aWQ9NDExMjInIHRhcmdldD0nX3NlbGYnGE5hdHVyYWwgVHJlZXMgYW5kIFNocnVic2QCAQ8WAh8FZmQCBQ9kFgRmDxUECSBjbGFzcz0iIjUgaHJlZj0nL2Jpb2xvZ3kvYmlvbG9neS5hc3B4P2lkPTQxMTIzJyB0YXJnZXQ9J19zZWxmJzUgaHJlZj0nL2Jpb2xvZ3kvYmlvbG9neS5hc3B4P2lkPTQxMTIzJyB0YXJnZXQ9J19zZWxmJwlNZWRpY2luYWxkAgEPFgIfBWZkAgYPZBYEZg8VBAkgY2xhc3M9IiI1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MTEyNCcgdGFyZ2V0PSdfc2VsZic1IGhyZWY9Jy9iaW9sb2d5L2Jpb2xvZ3kuYXNweD9pZD00MTEyNCcgdGFyZ2V0PSdfc2VsZicHUHJhaXJpZWQCAQ8WAh8FZmQCAQ8WAh8FZmQCEQ8PFgQeNE5vQm90X1Jlc3BvbnNlVGltZUtleV9jdGwwMCRjdGwwMCRCb2R5Q29udGVudCROb0JvdDIGmRbeE/Kf2UgeMk5vQm90X1Nlc3Npb25LZXlLZXlfY3RsMDAkY3RsMDAkQm9keUNvbnRlbnQkTm9Cb3QyBUJOb0JvdF9TZXNzaW9uS2V5X2N0bDAwJGN0bDAwJEJvZHlDb250ZW50JE5vQm90Ml82Mzc3MTY2ODQyOTM4NTk3MzdkFgICAQ8WAh4PQ2hhbGxlbmdlU2NyaXB0BQR+Mzg1ZAIFD2QWBAIBDxYCHwUCDxYeZg9kFgJmDxUDES9kaXNjb3ZlcmhlbmRyaXgvBV9zZWxmDUFib3V0IEhlbmRyaXhkAgEPZBYCZg8VAwsvY2FsZW5kYXJzLwVfc2VsZhJBY2FkZW1pYyBDYWxlbmRhcnNkAgIPZBYCZg8VAwovYXRobGV0aWNzBV9zZWxmCUF0aGxldGljc2QCAw9kFgJmDxUDbS9hcHBseS8/dXRtX2NhbXBhaWduPWFwcGx5TGlua3MmYW1wO3V0bV9zb3VyY2U9Z2xvYmFsJmFtcDt1dG1fbWVkaXVtPWZvb3Rlck5hdiZhbXA7dXRtX2NvbnRlbnQ9Zm9vdGVyTmF2QXBwbHkFX3NlbGYQQXBwbHkgdG8gSGVuZHJpeGQCBA9kFgJmDxUDDy9iYWlsZXlsaWJyYXJ5LwVfc2VsZg5CYWlsZXkgTGlicmFyeWQCBQ9kFgJmDxUDCi9jYW1wdXN3ZWIFX3NlbGYKQ2FtcHVzIFdlYmQCBg9kFgJmDxUDDC9sZWFkZXJzaGlwLwVfc2VsZhJIZW5kcml4IExlYWRlcnNoaXBkAgcPZBYCZg8VAwUvam9icwVfc2VsZhFKb2IgT3Bwb3J0dW5pdGllc2QCCA9kFgJmDxUDJS9hY2FkZW1pY2FmZmFpcnMvZGVmYXVsdC5hc3B4P2lkPTEwNzQFX3NlbGYNTWFqb3JzL01pbm9yc2QCCQ9kFgJmDxUDCy9tYWtlYWdpZnQvBV9zZWxmC01ha2UgYSBHaWZ0ZAIKD2QWAmYPFQMFL25ld3MFX3NlbGYLTmV3cyBDZW50ZXJkAgsPZBYCZg8VAwgvZXZlbnRzLwVfc2VsZg1QdWJsaWMgRXZlbnRzZAIMD2QWAmYPFQMbaHR0cHM6Ly9zcGlyaXQuaGVuZHJpeC5lZHUvBV9zZWxmDFNwaXJpdCBTdG9yZWQCDQ9kFgJmDxUDG2h0dHBzOi8vaGVuZHJpeC5lZHUvdGl0bGVpeAVfc2VsZh1UaXRsZSBJWCAvIE5vbi1EaXNjcmltaW5hdGlvbmQCDg9kFgJmDxUDBS93YWMvBV9zZWxmA1dBQ2QCAw8WAh8FAggWEGYPZBYCZg8VAwovZmFjZWJvb2svCGZhY2Vib29rCEZhY2Vib29rZAIBD2QWAmYPFQMJL3R3aXR0ZXIvB3R3aXR0ZXIHVHdpdHRlcmQCAg9kFgJmDxUDCS95b3V0dWJlLwd5b3V0dWJlB1lvdVR1YmVkAgMPZBYCZg8VAwgvZmxpY2tyLwZmbGlja3IGRmxpY2tyZAIED2QWAmYPFQMLL2luc3RhZ3JhbS8JaW5zdGFncmFtCUluc3RhZ3JhbWQCBQ9kFgJmDxUDDC9zb3VuZGNsb3VkLwpzb3VuZGNsb3VkClNvdW5kY2xvdWRkAgYPZBYCZg8VAwcvdmltZW8vBXZpbWVvBVZpbWVvZAIHD2QWAmYPFQMKL2xpbmtlZGluLwhsaW5rZWRpbghMaW5rZWRJbmQYAgUxY3RsMDAkY3RsMDAkR2xvYmFsTmF2MjAxNSRVaURlc2t0b3BMb2dpbk1lbnVWaWV3cw8PZGZkBTBjdGwwMCRjdGwwMCRHbG9iYWxOYXYyMDE1JFVpTW9iaWxlTG9naW5NZW51Vmlld3MPD2RmZIiF7tnjBij/Mbu+uL4puoOKyF5wjv+1Nm7lxENz/0Zq">
+        </div>
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DAD9D2DC">
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAhUpCAojjXyP4crN4pDp/j4OPwv0r2EVKhQL+dIIAsHledGD3XXkoTPyHIwDAkOPGfOYqz6FOsf10LkzodAGONh9oVF+wgLU0O8ofB7aF1OmMwupEgpHdWhSzaJNCqD88lQSWzYY8BEOHP4AO7Gr7vChkQzObMggMLFjT+OCxlZeXQ8YRou52Pr3Gag55dYWDdJ+VFwFYJQ+xwPPaGJ9hAx">
+        </div>
+        <header class="globalHeader-mobile">
+            <nav class="smallGlobalNav-menuContainer" style="display: none;">
+                <div class="smallGlobalNav-menuInnerContainer">
+                    <div class="mobileSearchBar">
+                        <div id="ctl00_ctl00_GlobalNav2015_UiMobileSearchPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#,39);ctl00_ctl00_GlobalNav2015_UiMobileSearch&#39;)">
+
+                            <div class="nav-search" role="search">
+                                <div class="input-group">
+                                    <label style="display: none" for="ctl00_ctl00_GlobalNav2015_UiMobileSearchText">Search</label>
+                                    <input name="ctl00$ctl00$GlobalNav2015$UiMobileSearchText" id="ctl00_ctl00_GlobalNav2015_UiMobileSearchText" type="text" class="form-control input-sm" placeholder="Search">
+                                    <span class="input-group-btn">
+                                        <input type="submit" name="ctl00$ctl00$GlobalNav2015$UiMobileSearch" value="Go!" id="ctl00_ctl00_GlobalNav2015_UiMobileSearch" class="btn btn-default btn-sm">
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <ul class="nav mobileGlobalNav">
+
+                        <li><a href="https://www.hendrix.edu/enroll">Deposit</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/lifeathendrix/">Life at Hendrix</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/academics/">Academics</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/visit/">Visit Us</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/financialaid/">Cost &amp; Aid</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/admission/">Admission</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/apply">Apply</a> </li>
+
+                    </ul>
+                    <div class="mobileResourceBar">
+                        <ul class="nav nav-audience">
+
+                            <li><a href="https://www.hendrix.edu/currentstudents/">Students</a> </li>
+
+                            <li><a href="https://www.hendrix.edu/parents/">Parents</a> </li>
+
+                            <li><a href="https://www.hendrix.edu/alumni/">Alumni</a> </li>
+
+                            <li><a href="https://www.hendrix.edu/facultystaff/">Faculty/Staff</a> </li>
+
+                        </ul>
+                        <ul class="nav nav-resources">
+                            <li class="dropdown">
+
+                                <a href="https://www.hendrix.edu/biology/biology.aspx?id=3645#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log in <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a id="ctl00_ctl00_GlobalNav2015_LinkButton2" href="javascript:__doPostBack(&#39;ctl00$ctl00$GlobalNav2015$LinkButton2&#39;,&#39;&#39;)"><i class="fa fa-sign-in fa-fw"></i>&nbsp;Log in</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="https://www.hendrix.edu/CampusWeb"><i class="fa fa-university fa-fw"></i>&nbsp;My CampusWeb</a></li>
+                                    <li><a href="https://outlook.office365.com/" target="_blank"><i class="fa fa-envelope-o fa-fw"></i>&nbsp;WebMail</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="https://www.hendrix.edu/news">News</a></li>
+                            <li><a href="https://www.hendrix.edu/giving">Giving</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <nav class="smallGlobalNav">
+                <div class="smallGlobalNav-content">
+                    <div class="smallGlobalNav-logoLink">
+                        <a href="https://www.hendrix.edu/">
+                            <img src="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/hendrixLogo_bob.svg" class="logo" alt="Hendrix College logo">
+                        </a>
+                    </div>
+                    <div class="smallGlobalNav-menuLink">
+                        <span>Menu</span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header class="globalHeader">
+            <nav class="navbar navbar-default" id="internalNav">
+                <div class="container">
+                    <ul class="nav navbar-nav nav-audience">
+
+                        <li><a href="https://www.hendrix.edu/currentstudents/">Students</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/parents/">Parents</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/alumni/">Alumni</a> </li>
+
+                        <li><a href="https://www.hendrix.edu/facultystaff/">Faculty/Staff</a> </li>
+
+                    </ul>
+                    <div class="navbar-form navbar-right nav-search" role="search">
+                        <div id="ctl00_ctl00_GlobalNav2015_UiDesktopSearchPanel" onkeypress="javascript: return WebForm_FireDefaultButton(event, &#, 39); ctl00_ctl00_GlobalNav2015_UiDesktopSearch &#;39;)">
+
+                            <div class="input-group">
+                                <label style="display: none" for="ctl00_ctl00_GlobalNav2015_UiDesktopSearchText">Search</label>
+                                <input name="ctl00$ctl00$GlobalNav2015$UiDesktopSearchText" id="ctl00_ctl00_GlobalNav2015_UiDesktopSearchText" type="text" class="form-control input-sm" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <input type="submit" name="ctl00$ctl00$GlobalNav2015$UiDesktopSearch" value="Go!" id="ctl00_ctl00_GlobalNav2015_UiDesktopSearch" class="btn btn-default btn-sm">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right nav-resources">
+                        <li class="dropdown">
+
+                            <a href="https://www.hendrix.edu/biology/biology.aspx?id=3645#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Log in <span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-left">
+                                <li>
+                                    <a id="ctl00_ctl00_GlobalNav2015_UiLogin" href="javascript:__doPostBack(&#39;ctl00$ctl00$GlobalNav2015$UiLogin&#39;,&#39;&#39;)"><i class="fa fa-sign-in fa-fw"></i>&nbsp;Log in</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="https://www.hendrix.edu/CampusWeb"><i class="fa fa-university fa-fw"></i>&nbsp;My CampusWeb</a></li>
+                                <li><a href="https://outlook.office365.com/" target="_blank"><i class="fa fa-envelope-o fa-fw"></i>&nbsp;WebMail</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://www.hendrix.edu/news">News</a></li>
+                        <li><a href="https://www.hendrix.edu/giving">Giving</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav id="externalNav">
+                <div class="container" id="prospectiveNav">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-xl-3">
+                            <a href="https://www.hendrix.edu/">
+                                <img src="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/hendrixLogo_bob.svg" class="logo" alt="Hendrix College logo">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-7 col-md-offset-1 col-lg-8 col-lg-offset-0 col-xl-9">
+                            <div class="tagline-container">
+                                <a href="https://www.hendrix.edu/giving"><img alt="Unto the Whole Person" src="/The%20Hendrix%20College%20Campus%20Arboretum%20_%20Hendrix%20College_files/hendrixTagline_orange_21.svg" class="tagline"></a>
+                            </div>
+                            <div class="globalNav-admission-container">
+                                <ul class="nav navbar-nav globalNav-admission">
+                                    <li><a href="https://www.hendrix.edu/enroll">Deposit</a></li>
+                                    <li><a href="https://www.hendrix.edu/lifeathendrix/">Life at Hendrix</a></li>
+                                    <li><a href="https://www.hendrix.edu/academics/">Academics</a></li>
+                                    <li><a href="https://www.hendrix.edu/visit/">Visit Us</a></li>
+                                    <li><a href="https://www.hendrix.edu/financialaid/">Cost &amp; Aid</a></li>
+                                    <li><a href="https://www.hendrix.edu/admission/">Admission</a></li>
+                                    <li><a href="https://www.hendrix.edu/apply">Apply</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script>Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$BodyContent$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00$ctl00');</script>
+
+<section class="standardContent">
+    <div class="container">
+        <div class="row">
+            <main class="standardContent-main">
+                <div class="col-md-12">
+                    <header><h1 id="arb"> The Hendrix Arboretum</h1></header>
+                    <hr id="main_heading" />
+                </div>
+            </main>
+        </div>
+        <div class="row" id="search_row">
+            <main class="standardContent-main">
+                <div class="col-md-4">
+                    <h2 class="search_buttons">Search By Number</h2>
+                    <div class="number_search">
+                        <input type="search" id="SearchTreeID" value="" onkeydown="return event.key != 'Enter';" />
+                        <input type="button" onclick="searchByNum()" id="SearchTreeIDbtn" value="Search" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="search_buttons">Search By Category</h2>
+                    <select class="search_things" id="category" name="number" onchange="searchBySpecialty()">
+                        <option value="">Select a category</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="search_buttons">Random Tree </h2>
+                    @*<button class="button-42" onclick ="randomTree()" role="button">Click Me!</button>*@
+                    <input class="search_things" type="button" onclick="randomTree()" id="random" value="Random Tree" />
+                </div>
+            </main>
+        </div>
+        <hr />
+        <div class="row" id="tree_page">
+            <div class="col-md-4" id="tree_info">
+                <header>
+                    <h2 id="tree_title">Tree #000</h2>
+                </header>
+                <h4 class="tree_header">Common Name</h4>
+                <p id="tree_common">UNKNOWN</p>
+                <h4 class="tree_header">Scientific Name</h4>
+                <p id="tree_scientific">UNKNOWN</p>
+                <h4 class="tree_header">Location</h4>
+                <p id="tree_location">UNKNOWN</p>
+                <h4 class="tree_header">GPS Coordinates</h4>
+                <p id="tree_gps">UNKNOWN</p>
+            </div>
+
+            <div class="col-md-4" id="tree_image">
+                <div id="main_tree_pic">
+                    <img src="testing" id="tree_img" alt="Tree Unavailable"/>
+                </div>
+            </div>
+
+            <div class="col-md-12" id="mainscreen">
+                <div class="contentZone-03">
+                    <div id="ctl00_ctl00_BodyContent_MiddleMainContentPlaceHolder_ContentBlockMain">
+                        <div id="map"></div>
+                    </div>
+
+                    @*Random things with the map that it doesn't seem to need but I am not sure*@
+
+                    @*<div id="ctl00_ctl00_BodyContent_MiddleMainContentPlaceHolder_FormBlockMain">
+                        <input type="hidden" id="ApplicationAPI0" name="ApplicationAPI0" value="postback">
+                        <input type="hidden" name="EktFormId" value="0">
+                        <input type="hidden" name="EktFormTitle" value="">
+                        <input type="hidden" name="EktFormDescription" value="">
+                        <input type="hidden" name="EktFormLang" value="0">
+                        <input type="hidden" name="EktFormPublishDate" value="1/1/0001 12:00:00 AM">
+
+                    </div>*@
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div id="admin" style="text-align:right;vertical-align:bottom">
+    <a style="color:white;" href="/Identity/Account/Login?ReturnUrl=%2Ftrees">admin</a>
+</div>
+
+
+        <div id="ctl00_ctl00_BodyContent_NoBot2">
+            <span id="ctl00_ctl00_BodyContent_NoBot2_NoBot2_NoBotLabel"></span><input type="hidden" name="ctl00$ctl00$BodyContent$NoBot2$NoBot2_NoBotExtender_ClientState" id="ctl00_ctl00_BodyContent_NoBot2_NoBot2_NoBotExtender_ClientState" value="-386">
+        </div>
+        <footer class="globalFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-xl-4">
+                        <div class="vcard">
+                            <a class="fn org url" href="https://www.hendrix.edu/">Hendrix College</a>
+                            <div class="adr">
+                                <span class="street-address">1600 Washington Avenue</span>
+                                <span class="locality">Conway</span>,
+                                <span class="region">Arkansas</span>
+                                <span class="postal-code">72032</span>
+                                <span class="country-name">USA</span>
+                            </div>
+                            <div class="geo">
+                                <abbr class="latitude" title="35.098230">N 35° 05.89380</abbr>
+                                <abbr class="longitude" title="-92.442525">W 92° 26.55150</abbr>
+                            </div>
+                            <div class="tel">
+                                <span class="type">Work</span>
+                                <span class="value"><a href="tel:+15013296811">501-329-6811</a></span>
+                            </div>
+                            <div class="tel">
+                                <span class="type">Work toll-free</span>
+                                <span class="value"><a href="tel:+18002779017">1-800-277-9017</a></span>
+                            </div>
+                            <div class="map"><a href="https://www.hendrix.edu/location">Map &amp; Directions</a></div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-md-offset-1 col-xl-3 col-xl-offset-1">
+                        <nav class="footer-links">
+                            <ul class="nav nav-stacked">
+
+                                <li><a href="https://www.hendrix.edu/discoverhendrix/" target="_self">About Hendrix</a></li>
+
+                                <li><a href="https://www.hendrix.edu/calendars/" target="_self">Academic Calendars</a></li>
+
+                                <li><a href="https://www.hendrix.edu/athletics" target="_self">Athletics</a></li>
+
+                                <li><a href="https://www.hendrix.edu/apply/?utm_campaign=applyLinks&amp;utm_source=global&amp;utm_medium=footerNav&amp;utm_content=footerNavApply" target="_self">Apply to Hendrix</a></li>
+
+                                <li><a href="https://www.hendrix.edu/baileylibrary/" target="_self">Bailey Library</a></li>
+
+                                <li><a href="https://www.hendrix.edu/campusweb" target="_self">Campus Web</a></li>
+
+                                <li><a href="https://www.hendrix.edu/leadership/" target="_self">Hendrix Leadership</a></li>
+
+                                <li><a href="https://www.hendrix.edu/jobs" target="_self">Job Opportunities</a></li>
+
+                                <li><a href="https://www.hendrix.edu/academicaffairs/default.aspx?id=1074" target="_self">Majors/Minors</a></li>
+
+                                <li><a href="https://www.hendrix.edu/makeagift/" target="_self">Make a Gift</a></li>
+
+                                <li><a href="https://www.hendrix.edu/news" target="_self">News Center</a></li>
+
+                                <li><a href="https://www.hendrix.edu/events/" target="_self">Public Events</a></li>
+
+                                <li><a href="https://spirit.hendrix.edu/" target="_self">Spirit Store</a></li>
+
+                                <li><a href="https://hendrix.edu/titleix" target="_self">Title IX / Non-Discrimination</a></li>
+
+                                <li><a href="https://www.hendrix.edu/wac/" target="_self">WAC</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-12 col-sm-offset-0 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 col-xl-2 col-xl-offset-2">
+                        <nav class="footerSocial">
+                            <ul>
+
+                                <li><a href="https://www.hendrix.edu/facebook/" target="_blank" class="facebook"><span>Facebook</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/twitter/" target="_blank" class="twitter"><span>Twitter</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/youtube/" target="_blank" class="youtube"><span>YouTube</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/flickr/" target="_blank" class="flickr"><span>Flickr</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/instagram/" target="_blank" class="instagram"><span>Instagram</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/soundcloud/" target="_blank" class="soundcloud"><span>Soundcloud</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/vimeo/" target="_blank" class="vimeo"><span>Vimeo</span></a></li>
+
+                                <li><a href="https://www.hendrix.edu/linkedin/" target="_blank" class="linkedin"><span>LinkedIn</span></a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;">
+                        <p style="display: inline-block; padding-top: 50px; font-size: smaller;" class="text-muted">Content on this site may require a PDF reader. Please visit <a class="text-muted" target="_blank" href="https://get.adobe.com/reader/" title="Get Adobe Reader">https://get.adobe.com/reader</a> to install reader software to access this content.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </form>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+<script>
+    var map = null;
+    var markers = null;
+    var large = true;
+
+    $(document).ready(function () {
+        leafletfunc();
+        addCategories();
+        $("#tree_info").hide();
+        $("#tree_image").hide();
+    });
+
+    function leafletfunc() {
+        map = L.map('map').setView([35.0995, -92.4407], 16);
+        const resizeObserver = new ResizeObserver(() => {
+            setTimeout(function () {
+                map.invalidateSize();
+                if (large) {
+                    map.panTo([35.0995, -92.4407]);
+                }
+            }, 400);
+        });
+        const mapDiv = document.getElementById("map");
+        resizeObserver.observe(mapDiv);
+        markers = L.layerGroup();
+        map.addLayer(markers);
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        }).addTo(map);
+    }
+
+    function addTrees(data) {
+        if (markers != null){
+            markers.clearLayers();
+        }
+
+        if (data.length == 0) {
+            randomTree();
+        } else {
+            if (data.length == 1) {
+                tree_popup(data[0])
+            } else {
+                hide_tree_panes();
+            }
+
+            console.log("Adding Trees")
+            for (let i = 0; i < data.length; i++) {
+                console.log("Adding tree")
+                var marker = L.marker([data[i].latitude, data[i].longitude], {
+                    title: data[i].treeID
+                });
+
+                marker.bindPopup('<h3>Tree #' + data[i].id + '</h3>');
+                markers.addLayer(marker);
+                marker.addEventListener('click', event => {
+                    tree_popup(data[i]);
+                });
+            }
+        }
+    }
+
+    function tree_popup(tree) {
+        $("#tree_title").text("Tree #" + tree.id);
+        $("#tree_common").text(tree.commonName);
+        $("#tree_scientific").text(tree.scientificName);
+        $("#tree_location").text(tree.locationName);
+        $("#tree_gps").text(tree.latitude + ", " + tree.longitude);
+        $("#tree_img").attr("src", tree.imageURL);
+        console.log(tree.imageURL);
+
+        show_tree_panes(tree);
+
+        setTimeout(function () {
+            map.panTo([tree.latitude, tree.longitude]);
+        }, 500);
+    }
+
+    function show_tree_panes(tree) {
+        if (large) {
+            $("#tree_info").show(1000);
+            $("#tree_image").show(1000);
+            $("#mainscreen").removeClass("col-md-12");
+            $("#mainscreen").addClass("col-md-4");
+
+            large = false;
+        }
+    }
+
+    function hide_tree_panes() {
+        if (!large) {
+            $("#tree_info").hide(1000);
+            $("#tree_image").hide(1000);
+            $("#mainscreen").removeClass("col-md-4");
+            $("#mainscreen").addClass("col-md-12");
+
+            large = true;
+        }
+    }
+
+    function addCategories() {
+        $.ajax({
+            type: 'GET',
+            url: '/API/Specialties/All',
+            data: { },
+            success: function (data) {
+                console.log("Found specialities");
+                $.each(data, function (i, item) {
+                    $('#category').append($('<option>', {
+                        value: item.title,
+                        text : item.title
+                    }));
+                });
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+
+    function searchByNum() {
+        var str = $("#SearchTreeID").val();
+        console.log(typeof str)
+        $.ajax({
+            type: 'GET',
+            url: '/API/Trees/',
+            data: { id: str },
+            success: function (data) {
+                addTrees(data);
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+    function randomTree() {
+        // tree #'s are in ranges of 1-1156 3000-3177 4000-4147 5000-5070 5300-5484
+        //var num = Math.round(Math.random() * (1156))
+        //var rand = num.toString()
+        //console.log(rand)
+        $.ajax({
+            type: 'GET',
+            url: '/API/Trees/Random',
+            data: { },
+            success: function (data) {
+                addTrees(data);
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+    function searchBySpecialty() {
+        console.log(document.getElementById("category").value)
+        var category = document.getElementById("category").value;
+        var str = $("#SearchTreeID").val();
+        console.log("Querying database")
+        $.ajax({
+            type: 'GET',
+            url: '/API/Specialties/',
+            data: { specialty: category },
+            success: function (data) {
+                console.log("Success Specialty")
+                addTrees(data);
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+</script>
+
+
+</body>
+</html>
