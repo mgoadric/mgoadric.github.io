@@ -497,7 +497,7 @@
     function addCategories() {
         $.ajax({
             type: 'GET',
-            url: '/API/Specialties/All',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Specialties/All',
             data: { },
             success: function (data) {
                 console.log("Found specialities");
@@ -520,7 +520,7 @@
         console.log(typeof str)
         $.ajax({
             type: 'GET',
-            url: '/API/Trees/',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Trees/',
             data: { id: str },
             success: function (data) {
                 addTrees(data);
@@ -538,7 +538,7 @@
         //console.log(rand)
         $.ajax({
             type: 'GET',
-            url: '/API/Trees/Random',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Trees/Random',
             data: { },
             success: function (data) {
                 addTrees(data);
@@ -556,7 +556,7 @@
         console.log("Querying database")
         $.ajax({
             type: 'GET',
-            url: '/API/Specialties/',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Specialties/',
             data: { specialty: category },
             success: function (data) {
                 console.log("Success Specialty")
