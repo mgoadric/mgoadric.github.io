@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin="" />
+
+    <title>	The Hendrix College Campus Arboretum | Hendrix College </title>
+</head>
+
+<body>
+
+<section class="standardContent">
+    <div class="container">
+        <div class="row">
+            <main class="standardContent-main">
+                <div class="col-md-12">
+                    <header><h1 id="arb"> The Hendrix Arboretum</h1></header>
+                    <hr id="main_heading" />
+                </div>
+            </main>
+        </div>
+        <div class="row" id="search_row">
+            <main class="standardContent-main">
+                <div class="col-md-4">
+                    <h2 class="search_buttons">Search By Number</h2>
+                    <div class="number_search">
+                        <input type="search" id="SearchTreeID" value="" onkeydown="return event.key != 'Enter';" />
+                        <input type="button" onclick="searchByNum()" id="SearchTreeIDbtn" value="Search" />
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="search_buttons">Search By Category</h2>
+                    <select class="search_things" id="category" name="number" onchange="searchBySpecialty()">
+                        <option value="">Select a category</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="search_buttons">Random Tree </h2>
+                    @*<button class="button-42" onclick ="randomTree()" role="button">Click Me!</button>*@
+                    <input class="search_things" type="button" onclick="randomTree()" id="random" value="Random Tree" />
+                </div>
+            </main>
+        </div>
+        <hr />
+        <div class="row" id="tree_page">
+            <div class="col-md-4" id="tree_info">
+                <header>
+                    <h2 id="tree_title">Tree #000</h2>
+                </header>
+                <h4 class="tree_header">Common Name</h4>
+                <p id="tree_common">UNKNOWN</p>
+                <h4 class="tree_header">Scientific Name</h4>
+                <p id="tree_scientific">UNKNOWN</p>
+                <h4 class="tree_header">Location</h4>
+                <p id="tree_location">UNKNOWN</p>
+                <h4 class="tree_header">GPS Coordinates</h4>
+                <p id="tree_gps">UNKNOWN</p>
+            </div>
+
+            <div class="col-md-4" id="tree_image">
+                <div id="main_tree_pic">
+                    <img src="testing" id="tree_img" alt="Tree Unavailable"/>
+                </div>
+            </div>
+
+            <div class="col-md-12" id="mainscreen">
+                <div class="contentZone-03">
+                    <div id="ctl00_ctl00_BodyContent_MiddleMainContentPlaceHolder_ContentBlockMain">
+                        <div id="map"></div>
+                    </div>
+
+                    @*Random things with the map that it doesn't seem to need but I am not sure*@
+
+                    @*<div id="ctl00_ctl00_BodyContent_MiddleMainContentPlaceHolder_FormBlockMain">
+                        <input type="hidden" id="ApplicationAPI0" name="ApplicationAPI0" value="postback">
+                        <input type="hidden" name="EktFormId" value="0">
+                        <input type="hidden" name="EktFormTitle" value="">
+                        <input type="hidden" name="EktFormDescription" value="">
+                        <input type="hidden" name="EktFormLang" value="0">
+                        <input type="hidden" name="EktFormPublishDate" value="1/1/0001 12:00:00 AM">
+
+                    </div>*@
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+<script>
+    var map = null;
+    var markers = null;
+    var large = true;
+
+    $(document).ready(function () {
+        leafletfunc();
+        addCategories();
+        $("#tree_info").hide();
+        $("#tree_image").hide();
+    });
+
+    function leafletfunc() {
+        map = L.map('map').setView([35.0995, -92.4407], 16);
+        const resizeObserver = new ResizeObserver(() => {
+            setTimeout(function () {
+                map.invalidateSize();
+                if (large) {
+                    map.panTo([35.0995, -92.4407]);
+                }
+            }, 400);
+        });
+        const mapDiv = document.getElementById("map");
+        resizeObserver.observe(mapDiv);
+        markers = L.layerGroup();
+        map.addLayer(markers);
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        }).addTo(map);
+    }
+
+    function addTrees(data) {
+        if (markers != null){
+            markers.clearLayers();
+        }
+
+        if (data.length == 0) {
+            randomTree();
+        } else {
+            if (data.length == 1) {
+                tree_popup(data[0])
+            } else {
+                hide_tree_panes();
+            }
+
+            console.log("Adding Trees")
+            for (let i = 0; i < data.length; i++) {
+                console.log("Adding tree")
+                var marker = L.marker([data[i].latitude, data[i].longitude], {
+                    title: data[i].treeID
+                });
+
+                marker.bindPopup('<h3>Tree #' + data[i].id + '</h3>');
+                markers.addLayer(marker);
+                marker.addEventListener('click', event => {
+                    tree_popup(data[i]);
+                });
+            }
+        }
+    }
+
+    function tree_popup(tree) {
+        $("#tree_title").text("Tree #" + tree.id);
+        $("#tree_common").text(tree.commonName);
+        $("#tree_scientific").text(tree.scientificName);
+        $("#tree_location").text(tree.locationName);
+        $("#tree_gps").text(tree.latitude + ", " + tree.longitude);
+        $("#tree_img").attr("src", tree.imageURL);
+        console.log(tree.imageURL);
+
+        show_tree_panes(tree);
+
+        setTimeout(function () {
+            map.panTo([tree.latitude, tree.longitude]);
+        }, 500);
+    }
+
+    function show_tree_panes(tree) {
+        if (large) {
+            $("#tree_info").show(1000);
+            $("#tree_image").show(1000);
+            $("#mainscreen").removeClass("col-md-12");
+            $("#mainscreen").addClass("col-md-4");
+
+            large = false;
+        }
+    }
+
+    function hide_tree_panes() {
+        if (!large) {
+            $("#tree_info").hide(1000);
+            $("#tree_image").hide(1000);
+            $("#mainscreen").removeClass("col-md-4");
+            $("#mainscreen").addClass("col-md-12");
+
+            large = true;
+        }
+    }
+
+    function addCategories() {
+        $.ajax({
+            type: 'GET',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Specialties/All',
+            data: { },
+            success: function (data) {
+                console.log("Found specialities");
+                $.each(data, function (i, item) {
+                    $('#category').append($('<option>', {
+                        value: item.title,
+                        text : item.title
+                    }));
+                });
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+
+    function searchByNum() {
+        var str = $("#SearchTreeID").val();
+        console.log(typeof str)
+        $.ajax({
+            type: 'GET',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Trees/',
+            data: { id: str },
+            success: function (data) {
+                addTrees(data);
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+    function randomTree() {
+        // tree #'s are in ranges of 1-1156 3000-3177 4000-4147 5000-5070 5300-5484
+        //var num = Math.round(Math.random() * (1156))
+        //var rand = num.toString()
+        //console.log(rand)
+        $.ajax({
+            type: 'GET',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Trees/Random',
+            data: { },
+            success: function (data) {
+                addTrees(data);
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+    function searchBySpecialty() {
+        console.log(document.getElementById("category").value)
+        var category = document.getElementById("category").value;
+        var str = $("#SearchTreeID").val();
+        console.log("Querying database")
+        $.ajax({
+            type: 'GET',
+            url: 'https://hendrix-arboretum.azurewebsites.net/API/Specialties/',
+            data: { specialty: category },
+            success: function (data) {
+                console.log("Success Specialty")
+                addTrees(data);
+            },
+            error: function (error) {
+                alert("Error: " + error);
+            }
+        });
+    }
+
+</script>
+
+
+</body>
+</html>
