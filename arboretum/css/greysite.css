@@ -4,3 +4,9 @@
     width: contain;
     height: 500px;
 }
+
+.footer-image{
+    width: 75px;
+    height: auto;
+    padding: 10px;
+}
