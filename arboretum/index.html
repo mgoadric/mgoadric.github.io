@@ -99,10 +99,8 @@
   <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Search By Category
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" onclick="searchBySpecialty('Maple')">Maple</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <ul id="category" class="dropdown-menu">
+
   </ul>
 </div>
 </div>
@@ -226,7 +224,7 @@
                             title: data[i].treeID
                         });
         
-                        marker.bindPopup('<h3>Tree #' + data[i].id + '</h3>');
+                        marker.bindPopup('<h3>Tree #<a href="#tree">' + data[i].id + '</a></h3>');
                         markers.addLayer(marker);
                         marker.addEventListener('click', event => {
                             tree_popup(data[i]);
@@ -281,10 +279,9 @@
                     success: function (data) {
                         console.log("Found specialities");
                         $.each(data, function (i, item) {
-                            $('#category').append($('<option>', { 
-                                value: item.title,
-                                text : item.title 
-                            }));
+                            $('#category').append(
+                                $('<li><a class="dropdown-item" onclick="searchBySpecialty(\'' + 
+                                    item.title + '\')">' + item.title + '</a></li>'));   
 
                         });
                     },
