@@ -100,7 +100,7 @@
     Search By Category
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" onclick="searchBySpecialty('Maple')">Maple</a></li>
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
   </ul>
@@ -329,10 +329,9 @@
                 });
             }
         
-            function searchBySpecialty() {
-                console.log(document.getElementById("category").value)
-                var category = document.getElementById("category").value;
-                var str = $("#SearchTreeID").val();
+            function searchBySpecialty(category) {
+                //console.log(document.getElementById("category").value)
+                //var category = document.getElementById("category").value;
                 console.log("Querying database")
                 $.ajax({
                     type: 'GET',
