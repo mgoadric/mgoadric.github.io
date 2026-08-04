@@ -5,7 +5,7 @@ $(document).ready(function() {
       jsonpCallback: "parseQuote",
       url: "https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=parseQuote",
       success: function(results) {
-        $('.fortune').text(results["quoteText"]);
+        $('.fortune').text(results["quoteText"] + " - " + results["quoteAuthor"]);
       },
       error: function(xhr,status,error) {
         console.log(error);
